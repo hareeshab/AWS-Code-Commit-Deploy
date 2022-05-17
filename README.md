@@ -19,6 +19,10 @@ EC2 script on creation to install the CodeDeploy Agent:
 ```
 #!/bin/bash
 sudo yum -y update
+sudo amazon-linux-extras install epel
+curl -sL https://rpm.nodesource.com/setup_6.x | sudo -E bash -
+sudo yum install nodejs -y
+sudo npm install express
 sudo yum -y install ruby
 sudo yum -y install wget
 cd /home/ec2-user
