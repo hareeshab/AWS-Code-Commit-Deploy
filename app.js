@@ -14,7 +14,7 @@ app.get('/products', (req, res) => {
     },
     {
       productId: '102',
-      price: 300
+      price: 350
     }
   ])
 })
